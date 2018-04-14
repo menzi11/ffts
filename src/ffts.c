@@ -33,6 +33,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "ffts.h"
 
+#ifdef _MSC_VER
+#pragma warning(disable: 4324 4267 )
+#endif
+
 #include "ffts_internal.h"
 #include "ffts_chirp_z.h"
 #include "ffts_static.h"

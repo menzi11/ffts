@@ -1,4 +1,4 @@
-/*
+﻿/*
  * ia64-codegen.h: Macros for generating ia64 code
  *
  * Authors:

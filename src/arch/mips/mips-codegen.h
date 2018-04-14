@@ -1,4 +1,4 @@
-#ifndef __MIPS_CODEGEN_H__
+﻿#ifndef __MIPS_CODEGEN_H__
 #define __MIPS_CODEGEN_H__
 /*
  * Copyright (c) 2004 Novell, Inc

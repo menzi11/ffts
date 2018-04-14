@@ -1,4 +1,4 @@
-/*
+﻿/*
    Authors:
      Radek Doulik
      Christopher Taylor <ct_AT_clemson_DOT_edu>

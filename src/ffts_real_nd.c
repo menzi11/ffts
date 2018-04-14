@@ -31,6 +31,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 */
 
+#ifdef _MSC_VER
+#pragma warning(disable:4324 4267 )
+#endif
+
 #include "ffts_real_nd.h"
 #include "ffts_real.h"
 #include "ffts_internal.h"
@@ -45,18 +49,18 @@ ffts_free_nd_real(ffts_plan_t *p)
         for (i = 0; i < p->rank; i++) {
             ffts_plan_t *plan = p->plans[i];
 
-			if (plan) {
-				for (j = 0; j < i; j++) {
-					if (p->Ns[i] == p->Ns[j]) {
-						plan = NULL;
-						break;
-					}
-				}
+            if (plan) {
+                for (j = 0; j < i; j++) {
+                    if (p->Ns[i] == p->Ns[j]) {
+                        plan = NULL;
+                        break;
+                    }
+                }
 
-				if (plan) {
-					ffts_free(plan);
-				}
-			}
+                if (plan) {
+                    ffts_free(plan);
+                }
+            }
         }
 
         free(p->plans);

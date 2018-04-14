@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2002 Sergey Chaban <serge@wildwestsoftware.com>
  */
 

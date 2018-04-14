@@ -1,4 +1,4 @@
-/*
+﻿/*
  * x86-codegen.h: Macros for generating x86 code
  *
  * Authors:

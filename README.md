@@ -1,4 +1,4 @@
-# FFTS -- The Fastest Fourier Transform in the South
+﻿# FFTS -- The Fastest Fourier Transform in the South
 
 [![Build Status](https://travis-ci.org/linkotec/ffts.svg?branch=master)](https://travis-ci.org/linkotec/ffts)
 

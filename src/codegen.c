@@ -34,6 +34,10 @@
 #include "codegen.h"
 #include "macros.h"
 
+#ifdef _MSC_VER
+#pragma warning(disable:4267 4244 4204)
+#endif
+
 #ifdef __arm__
 typedef uint32_t insns_t;
 #else
@@ -119,6 +123,7 @@ transform_func_t ffts_generate_func_code(ffts_plan_t *p, size_t N, size_t leaf_N
 
     int       count;
     ptrdiff_t len;
+    (void)len;
 
     size_t   *ps;
     size_t   *pps;

@@ -32,6 +32,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 */
 
+#ifdef _MSC_VER
+#pragma warning(disable:4324 4267 )
+#endif
+
 #include "ffts_nd.h"
 #include "ffts_internal.h"
 #include "ffts_transpose.h"

@@ -1,4 +1,4 @@
-/*
+﻿/*
 
 This file is part of FFTS -- The Fastest Fourier Transform in the South
 
@@ -34,6 +34,11 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #ifndef FFTS_INTERNAL_H
 #define FFTS_INTERNAL_H
+
+#ifdef _MSC_VER
+#pragma warning(push)
+#pragma warning(disable:4324 4267 )
+#endif
 
 #ifdef AUTOTOOLS_BUILD
 #include "config.h"
@@ -298,5 +303,9 @@ ffts_next_power_of_2(size_t N)
 }
 #endif /* _WIN64 */
 #endif /* _MSC_VER */
+
+#ifdef _MSC_VER
+#pragma warning(pop)
+#endif
 
 #endif /* FFTS_INTERNAL_H */

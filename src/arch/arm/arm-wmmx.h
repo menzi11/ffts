@@ -1,4 +1,4 @@
-/*
+﻿/*
  * ARM CodeGen
  * XScale WirelessMMX extensions
  * Copyright 2002 Wild West Software

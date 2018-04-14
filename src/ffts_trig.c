@@ -1,4 +1,4 @@
-/*
+Ôªø/*
 
 This file is part of FFTS -- The Fastest Fourier Transform in the South
 
@@ -33,15 +33,19 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "ffts_trig.h"
 #include "ffts_dd.h"
 
+#ifdef _MSC_VER
+#pragma warning(disable:4267)
+#endif
+
 /*
 *  For more information on algorithms:
 *
 *  D. Potts, G. Steidl, M. Tasche, Numerical stability of fast
-*  trigonometric transforms ó a worst case study,
-*  J. Concrete Appl. Math. 1 (2003) 1ñ36
+*  trigonometric transforms ?a worst case study,
+*  J. Concrete Appl. Math. 1 (2003) 1?6
 *
-*  O. Buneman, Stable onñline creation of sines and cosines of
-*  successive angles, Proc. IEEE 75, 1434 ñ 1435 (1987).
+*  O. Buneman, Stable onÊùîine creation of sines and cosines of
+*  successive angles, Proc. IEEE 75, 1434 ?1435 (1987).
 */
 
 /* An union to initialize doubles using byte presentation,

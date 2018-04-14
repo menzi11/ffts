@@ -1,4 +1,4 @@
-#ifndef __SPARC_CODEGEN_H__
+﻿#ifndef __SPARC_CODEGEN_H__
 #define __SPARC_CODEGEN_H__
 
 #if SIZEOF_VOID_P == 8
